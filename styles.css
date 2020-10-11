@@ -1,0 +1,30 @@
+
+
+.video {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 60%;
+}
+
+
+.video video {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    color: #f0f0f0;
+}
+
+body {
+    background-color: #110e0e;
+}
+
+.buttons {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
