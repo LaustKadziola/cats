@@ -5,13 +5,25 @@
     margin: auto;
     position: relative;
     width: 60%;
+
 }
 
-
-.video video {
-    width: 100%;
+.videoWrapper{
     display: block;
     margin: auto;
+    position: relative;
+    width: 100%;
+    padding-bottom: 57%;
+}
+
+.video video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+
 }
 
 h1 {
@@ -22,9 +34,32 @@ body {
     background-color: #110e0e;
 }
 
-.buttons {
-    position: absolute;
+.buttons button {
+    /* position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    border-radius: 2px;
+    border: none;
+    display: inline-block;
+    background-color: rgb(71, 71, 71);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1em;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+}
+
+.buttons button:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.buttons button:active {
+    background-color: rgb(41, 41, 41);
+}
+
+*:focus {
+    outline: 0;
 }
