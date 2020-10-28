@@ -34,6 +34,10 @@ body {
     background-color: #110e0e;
 }
 
+.buttons {
+    transition: display 0.3s;
+}
+
 .buttons button {
     /* position: absolute;
     top: 80%;
