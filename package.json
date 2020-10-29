@@ -1,0 +1,19 @@
+{
+  "name": "cats",
+  "version": "1.0.0",
+  "description": "some cats",
+  "main": "nodes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaustKadziola/cats.git"
+  },
+  "author": "Laust Kadziola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaustKadziola/cats/issues"
+  },
+  "homepage": "https://github.com/LaustKadziola/cats#readme"
+}
