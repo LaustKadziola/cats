@@ -5,19 +5,31 @@
     <meta charset="utf-8" />
     <title>Cats</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"> </script>
+
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            topFunction();
+        }
+    </script>
 </head>
 
 <body>
     <br>
     <div id="content">
-        <h1>This is some text</h1>
+    </div>
+
+    <div>
+        <iframe src="levels/level_0.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" onload="resizeIframe(this)"></iframe>
     </div>
 
     <script>
-        //$(document).ready(function() {
-        //    $("#content").load("levels/level_0.html");
-        //});
+        function topFunction() {
+            console.log("going to top");
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 
 

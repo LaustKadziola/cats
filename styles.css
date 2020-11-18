@@ -67,3 +67,46 @@ body {
 *:focus {
     outline: 0;
 }
+
+iframe {
+    width: 100%
+}
+
+img.portrait {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+p {
+    display: inline-block;
+    color: snow;
+    font-size: 18px;
+}
+
+div.text {
+    display: inline-block;
+    width: 35%;
+    margin-left: 10%;
+}
+
+div.window {
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+a.button {
+    font: bold 18px;
+    text-decoration: none;
+    background-color: #317731;
+    color: #a3a3a3;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+    font-family: Verdana, sans-serif;
+    border-radius: 2px;
+    display: inline-block;
+}
