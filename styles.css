@@ -79,6 +79,12 @@ img.portrait {
     vertical-align: top;
 }
 
+img.smallPortrait {
+    width: 30%;
+    height: auto;
+    display: inline;
+}
+
 p {
     display: inline-block;
     color: snow;
@@ -109,4 +115,41 @@ a.button {
     font-family: Verdana, sans-serif;
     border-radius: 2px;
     display: inline-block;
+}
+
+.speechBubble {
+    position: absolute;
+    top: 0%;
+    left: 27%;
+    z-index:1000;
+    background: #00aabb;
+    width: 20%;
+    border-radius: .4em;
+    text-align: left;
+    padding: 30px;
+    padding-left: 60px;
+}
+
+.speechBubble:after {
+	content: '';
+    position: absolute;
+	right: 0;
+	top: 30%;
+	width: 0;
+	height: 0;
+	border: 38px solid transparent;
+	border-left-color: #00aabb;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -19px;
+	margin-right: -38px;
+}
+
+#trumpSpeech{
+    display: none
+}
+
+
+#trumpImg:hover + #trumpSpeech{
+    display: block
 }
