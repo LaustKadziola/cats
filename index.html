@@ -5,22 +5,33 @@
     <meta charset="utf-8" />
     <title>Cats</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"> </script>
+
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            topFunction();
+        }
+    </script>
 </head>
 
 <body>
     <br>
-    <div class="video">
-        <div class="videoWrapper" style="--aspect-ratio: 1;">
-            <video controls></video>
-        </div>
-        <div class="buttons" id=buttons>
-            <button id="button_1" type="button" >Option 1</button>
-            <button id="button_2" type="button" >Option 2</button>
-            <button id="button_3" type="button" >Option 3</button>
-        </div>
+    <div id="content">
     </div>
 
-    <script src="video.js"></script>
+    <div>
+        <iframe src="levels/level_0.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" onload="resizeIframe(this)"></iframe>
+    </div>
+
+    <script>
+        function topFunction() {
+            console.log("going to top");
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
 
 </body>
 

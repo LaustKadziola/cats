@@ -1,0 +1,19 @@
+{
+  "name": "cats",
+  "version": "1.0.0",
+  "description": "some cats",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaustKadziola/cats.git"
+  },
+  "author": "Laust Kadziola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaustKadziola/cats/issues"
+  },
+  "homepage": "https://github.com/LaustKadziola/cats#readme"
+}

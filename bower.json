@@ -1,0 +1,21 @@
+{
+  "name": "cats",
+  "description": "some cats",
+  "main": "index.html",
+  "authors": [
+    "Laust Kadziola"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LaustKadziola/cats",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
