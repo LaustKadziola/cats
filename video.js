@@ -1,3 +1,6 @@
+console.log("hello there!");
+var variable = 42;
+console.log(`this is a variable ${variable}`);
 
 
 //INIT
