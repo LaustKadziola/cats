@@ -1,4 +1,6 @@
-console.log("hello there!")
+console.log("hello there!");
+var variable = 42;
+console.log(`this is a variable ${variable}`);
 
 var v = document.getElementsByTagName('video')[0];
 var source = document.createElement('source');
