@@ -1,22 +1,17 @@
 
 
-.video {
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 60%;
-
-}
-
 .videoWrapper{
-    display: block;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
     margin: auto;
+    padding-left: 1rem;
     position: relative;
-    width: 100%;
+    width: 40%;
     padding-bottom: 57%;
 }
 
-.video video {
+video {
     position: absolute;
     width: 100%;
     height: auto;
@@ -32,6 +27,7 @@ h1 {
 
 body {
     background-color: #110e0e;
+    font-family: Verdana, sans-serif;
 }
 
 .buttons {
@@ -152,4 +148,17 @@ a.button {
 
 #trumpImg:hover + #trumpSpeech{
     display: block
+}
+
+.questions{
+    display: inline-block;
+    margin-left: 6rem;
+    color: snow;
+}
+
+.questions button{
+    margin: 3px;
+    padding: 3px 10px;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
 }

@@ -36,6 +36,9 @@ const server = http.createServer((req, res) => {
         case ".jpg":
             contentType = "image/jpg";
             break;
+        case ".mp4":
+            contentType = "video/mp4";
+            break;
         default:
             break;
     }
