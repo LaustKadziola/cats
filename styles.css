@@ -1,14 +1,21 @@
 
 
-.videoWrapper{
+
+.left{
     text-align: left;
     display: inline-block;
     vertical-align: top;
     margin: auto;
-    padding-left: 1rem;
     position: relative;
     width: 40%;
     height: 80%;
+}
+
+.videoWrapper{
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+    margin-top: 20%;
 }
 
 video {
@@ -19,6 +26,12 @@ video {
     margin: auto;
 
 
+}
+
+iframe.video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
@@ -197,4 +210,14 @@ img.date{
     height: 20;
     border: 10px;
     border-color: #a3a3a3;
+}
+
+p.fakta{
+    border-color: #a3a3a3;
+    padding: 10px;
+    border-style: solid;
+}
+
+ul{
+    list-style-type: none;
 }
