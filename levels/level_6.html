@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="inner">
+    <div class="window">
+        <div class="top">
+            <p></p>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="window">
+        <div class="top">
+            <iframe class="timeLine"
+            src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1w-b8WI3S8c5pk_o-e6oZ7my63xcsTQKIeTchmLs8_pk&font=Default&lang=en&initial_zoom=2&height=650' 
+            width='90%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        </div>
+    </div>
+
+    <script>
+        $('.linkToBottom').click(function () {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 'slow');
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>

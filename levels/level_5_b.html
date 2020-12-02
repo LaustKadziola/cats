@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="inner">
+    <div class="window">
+        <div class="top">
+            <img class="house" src="../resources/images/Hus_med_baggrund.jpg">
+
+
+            <div class="text">
+
+                <p>
+                    Jessica beslutter sig for at tage hjem til Michael for at konfrontere ham med 
+                    det, hun har set. Hun har stadig svært ved at forstå det. Hun troede, at hun 
+                    kendte Michael. Men måske kender man aldrig rigtig nogen, tænker hun. Hun er 
+                    skuffet og ked af, at han ikke har sagt noget. Hvis Michael bare havde forklaret 
+                    sine bekymringer for forandringerne i samfundet, kunne vi have talt om det, 
+                    tænker Jessica.
+                </p>
+                <br>
+                <p>
+                    Hun banker på døren til Michaels hus. Hun tripper lidt nervøst. Hun har ikke 
+                    planlagt, hvad hun skal sige til ham. Udover de mange spørgsmål, der har hobet 
+                    sig op. Jessica hører skridt bag døren, og den åbnes halvt op. En mand med en 
+                    Trump-kasket står på den anden side. Det må være Michaels far, tænker hun.
+                </p>
+                <br>
+                <p>
+                    “Ja?” spørger han og kigger mistroisk på Jessica. “Er Michael hjemme?” spørger 
+                    hun forsigtigt. “Nej, det er han ikke,” svarer faren. “Faktisk har jeg ikke 
+                    set ham siden i går. Hvad vil du ham?” “Jeg.. Hvad? Er han væk?” spørger Jessica 
+                    forvirret og mærker, hvordan hendes hjerte hamrer.
+                </p>
+                <br>
+                <p>
+                    “Ja.. Vi er ved at starte en eftersøgning af ham nu,” siger Michaels far 
+                    utålmodigt og kigger undersøgende på Jessica. “Hvor kender du ham fra? 
+                    Michael omgås ikke nogen.. nogen af din slags. Går I i skole sammen?” 
+                    “Jeg.. vi..” prøver Jessica, men bliver afbrudt, da hendes mobil pludselig 
+                    begynder at ringe. Det er hendes veninde Maria.
+                </p>
+                <br>
+                <button class="linkToBottom" id="buttom">Klik for at fortsætte</button>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="window">
+        <div class="top">
+            <img class="portrait" src="../resources/images/Maria_ringer.jpg">
+        </div>
+
+        <div class="bottom">
+            <h1>Hvad gør Jessica?</h1>
+            <a class="button" href="level_3_a.html" target="targetframe">Tager telefonen.</a>
+            <a class="button" href="level_3_b.html" target="targetframe">Lægger på.</a>
+        </div>
+
+    </div>
+
+    <script>
+        $('.linkToBottom').click(function () {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 'slow');
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -7,15 +7,15 @@
     vertical-align: top;
     margin: auto;
     position: relative;
-    width: 40%;
+    width: 60%;
     height: 80%;
 }
 
 .videoWrapper{
     position: relative;
-    height: 40vh;
-    width: 40vw;
-    margin-top: 20%;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-top: 10%;
 }
 
 video {
@@ -32,10 +32,15 @@ iframe.video {
     position: absolute;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 h1 {
     color: #f0f0f0;
+    font-size: 20px;
 }
 
 body {
@@ -99,6 +104,14 @@ img.portrait {
     padding: 20px;
 }
 
+img.house {
+    box-sizing: border-box;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
 img.smallPortrait {
     width: 30%;
     height: auto;
@@ -108,13 +121,14 @@ img.smallPortrait {
 p {
     display: inline-block;
     color: snow;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 div.text {
+    text-align: justify;
     display: inline-block;
-    width: 35%;
-    margin-left: 10%;
+    max-width: 50%;
+    margin-left: 5%;
 }
 
 div.window {
@@ -140,6 +154,18 @@ a.button {
     text-decoration: none;
     background-color: #317731;
     color: #a3a3a3;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+    font-family: Verdana, sans-serif;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+a.button:hover {
+    font: bold 18px;
+    text-decoration: none;
+    background-color: #359435;
+    color: #7e7e7e;
     padding: 5px 10px 5px 10px;
     margin: 5px 5px 5px 5px;
     font-family: Verdana, sans-serif;
@@ -186,7 +212,8 @@ a.button {
 
 .questions{
     display: inline-block;
-    margin-left: 6rem;
+    width: 25%;
+    margin-left: 5%;
     color: snow;
 }
 
@@ -212,12 +239,38 @@ img.date{
     border-color: #a3a3a3;
 }
 
-p.fakta{
+div.fakta{
     border-color: #a3a3a3;
     padding: 10px;
     border-style: solid;
 }
 
+
+
+.fakta ul{
+    list-style-type: disc;
+    text-align: left;
+}
+
 ul{
     list-style-type: none;
+}
+
+.fakta{
+    color: grey;
+    list-style-type: disc;
+}
+
+h1.fail{
+    color: grey;
+    margin: 0px;
+    padding: 10% 30%;
+}
+
+img.inText{
+    height: 50vh;
+}
+
+iframe.timeLine{
+    width: 80%;
 }
