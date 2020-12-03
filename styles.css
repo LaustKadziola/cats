@@ -236,6 +236,10 @@ ul{
     list-style-type: disc;
 }
 
+.fakta p{
+    color: grey;
+}
+
 h1.fail{
     color: grey;
     margin: 0px;
