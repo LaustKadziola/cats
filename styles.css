@@ -112,12 +112,6 @@ img.house {
     padding: 20px;
 }
 
-img.smallPortrait {
-    width: 30%;
-    height: auto;
-    display: inline;
-}
-
 p {
     display: inline-block;
     color: snow;
@@ -125,6 +119,7 @@ p {
 }
 
 div.text {
+    margin-block-start: 0%;
     text-align: justify;
     display: inline-block;
     max-width: 50%;
@@ -153,7 +148,7 @@ a.button {
     font: bold 18px;
     text-decoration: none;
     background-color: #317731;
-    color: #a3a3a3;
+    color: #dadada;
     padding: 5px 10px 5px 10px;
     margin: 5px 5px 5px 5px;
     font-family: Verdana, sans-serif;
@@ -162,10 +157,10 @@ a.button {
 }
 
 a.button:hover {
-    font: bold 18px;
+    font: bold;
     text-decoration: none;
     background-color: #359435;
-    color: #7e7e7e;
+    color: #dadada;
     padding: 5px 10px 5px 10px;
     margin: 5px 5px 5px 5px;
     font-family: Verdana, sans-serif;
@@ -173,55 +168,35 @@ a.button:hover {
     display: inline-block;
 }
 
-.speechBubble {
-    position: absolute;
-    top: 0%;
-    left: 27%;
-    z-index:1000;
-    background: #00aabb;
-    width: 20%;
-    border-radius: .4em;
-    text-align: left;
-    padding: 30px;
-    padding-left: 60px;
-}
-
-.speechBubble:after {
-	content: '';
-    position: absolute;
-	right: 0;
-	top: 30%;
-	width: 0;
-	height: 0;
-	border: 38px solid transparent;
-	border-left-color: #00aabb;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -19px;
-	margin-right: -38px;
-}
-
-#trumpSpeech{
-    display: none
-}
-
-
-#trumpImg:hover + #trumpSpeech{
-    display: block
-}
-
 .questions{
+    text-align: center;
     display: inline-block;
     width: 25%;
     margin-left: 5%;
     color: snow;
 }
 
-.questions button{
-    margin: 3px;
+.questions ul{
+    padding: 0%;
+    text-align: center;
+}
+
+.questions li{
+    text-align: center;
+}
+
+.questions a{
+    width: 80%;
+    margin: 2% 10%;
     padding: 3px 10px;
     font-family: Verdana, sans-serif;
-    font-size: 18px;
+}
+
+.questions a:hover{
+    width: 80%;
+    margin: 2% 10%;
+    padding: 3px 10px;
+    font-family: Verdana, sans-serif;
 }
 
 img.date{
@@ -234,7 +209,7 @@ img.date{
 }
 
 .bottom{
-    height: 20;
+    height: 20%;
     border: 10px;
     border-color: #a3a3a3;
 }
@@ -273,4 +248,141 @@ img.inText{
 
 iframe.timeLine{
     width: 80%;
+}
+
+
+.start{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+.start p{
+    width: 60%;
+    text-align: justify;
+    margin-top: 0%;
+}
+
+.start h1{
+    padding: 2vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.start img{
+    height: 75vh;
+    width: auto;
+}
+
+.computer{
+    position: relative;
+    background-image: url("/resources/images/computer.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+    background-position: center;
+    text-align: center;
+}
+
+img.smallPortrait {
+    position: relative;
+    height: 29%;
+    width: auto;
+    display: inline;
+    top: 27.5%;
+    border: black;
+    border-style: solid;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+
+.speechBubbleTrump {
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 15%;
+    z-index:1000;
+    background: #c4c4c4;
+    width: 25vw;
+    border-radius: .4em;
+    text-align: left;
+    padding: 20px;
+}
+
+.speechBubbleTrump:after {
+	content: '';
+    position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 38px solid transparent;
+	border-right-color: #c4c4c4;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -19px;
+	margin-left: -38px;
+}
+
+#trumpSpeech{
+    display: none;
+    position: absolute;
+    top: 20%;
+}
+
+#bidenImg:hover{
+    border-color: rgb(116, 116, 116);
+}
+
+
+#trumpImg:focus + #trumpSpeech{
+    display: inline;
+    position: absolute;
+    top: 20%;
+}
+
+.speechBubbleBiden {
+    display: block;
+    position: relative;
+    top: 0%;
+    left: -45vw;
+    z-index:1000;
+    background: #c4c4c4;
+    width: 25vw;
+    border-radius: .4em;
+    text-align: left;
+    padding: 20px;
+}
+
+.speechBubbleBiden:after {
+	content: '';
+    position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 38px solid transparent;
+	border-left-color: #c4c4c4;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -19px;
+	margin-right: -38px;
+}
+
+#bidenSpeech{
+    display: none;
+    position: absolute;
+    top: 20%; 
+}
+
+#bidenImg:hover{
+    border-color: rgb(116, 116, 116);
+}
+
+#bidenImg:focus + #bidenSpeech{
+    display: inline;
+    position: absolute;
+    top: 20%; 
 }
