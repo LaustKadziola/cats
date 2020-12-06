@@ -97,16 +97,16 @@ iframe {
 }
 
 img.portrait {
+    display: block;
+    margin: auto;
+    text-align: center;
     box-sizing: border-box;
-    height: 100%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 20px;
+    height: 80vh;
 }
 
 img.house {
     box-sizing: border-box;
-    width: 40%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
     padding: 20px;
@@ -119,11 +119,9 @@ p {
 }
 
 div.text {
-    margin-block-start: 0%;
+    margin: auto;
     text-align: justify;
-    display: inline-block;
     max-width: 50%;
-    margin-left: 5%;
 }
 
 div.window {
@@ -201,7 +199,8 @@ a.button:hover {
 
 img.date{
     border-radius: 15px;
-    margin: 10px;
+    display: block;
+    margin: auto;
 }
 
 .top{
